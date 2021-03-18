@@ -1,0 +1,25 @@
+
+.cu-form-group {
+	padding: 1rpx 65rpx;
+	min-height: 0;
+	border: 1px solid #CCCCCC;
+	border-radius: 13rpx;
+}
+.padding {
+	padding: 8rpx 18rpx;
+}
+.margin-top-xxxl {
+	margin-top: 60rpx;
+}
+.cu-list.card-menu {
+	height: 11vh;
+}
+.way {
+	margin-right: 30rpx;
+	margin-left: 30rpx;
+	border-radius: 20rpx;
+}
+.icon {
+	padding-right: 15rpx;
+}
+

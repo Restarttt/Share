@@ -1,0 +1,24 @@
+
+page {
+	background-image: var(--gradualBlue);
+	width: 100vw;
+	overflow: hidden;
+}
+.cu-list.menu-avatar>.cu-item {
+	height: 13vh;
+	background-color: #6d71fe;
+}
+.cu-list.menu-avatar>.cu-item .content {
+	left: 10vw;
+	line-height: 2.2em;
+}
+.padding {
+	padding: 13rpx 18rpx;
+}
+.margin{
+	margin: 30rpx;
+}
+.text-bold {
+	text-align: center;
+}
+

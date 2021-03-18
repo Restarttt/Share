@@ -1,0 +1,36 @@
+
+.homepage {
+	margin-top: 60rpx;
+}
+image {
+	width: 50rpx;
+	height: 50rpx;
+	margin-right: 25rpx;
+}
+.home-title {
+	font-size: 52rpx;
+	font-weight: 400;
+	color: #8799A3;
+	letter-spacing: 17rpx;
+	font-style: oblique;
+}
+.home-subt {
+	font-weight: 600;
+	font-size: 63rpx;
+	color: #0081FF;
+	letter-spacing: 16rpx;
+	font-style: oblique;
+}
+.down {
+	margin: auto;
+	margin-top: 420rpx;
+}
+.text {
+	font-family: "Fantasy", Times, Fantasy;
+	letter-spacing: 10rpx;
+}
+.text-share {
+	letter-spacing: 4rpx;
+	line-height: 2.0;
+}
+

@@ -1,0 +1,16 @@
+
+.cu-tag {
+	letter-spacing: 4rpx;
+	border-radius: 100rpx;
+}
+.cu-form-group textarea {
+	padding: 25rpx;
+	margin: 0rpx 0 30rpx;
+	height: 6.6em;
+	border-radius: 10rpx;
+	letter-spacing: 4rpx;
+}
+.cu-bar {
+	margin-top: 50rpx;
+}
+

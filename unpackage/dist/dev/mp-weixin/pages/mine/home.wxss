@@ -1,0 +1,12 @@
+
+.cu-list.menu-avatar>.cu-item {
+	height: 13vh;
+	background-color: #6d71fe;
+}
+.padding {
+	padding: 13rpx 18rpx;
+}
+.text-bold {
+	text-align: center;
+}
+

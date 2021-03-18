@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/post/report",
+    "pages/post/share",
+    "pages/post/win",
+    "pages/mine/record",
+    "pages/mine/info",
+    "pages/mine/detail",
+    "pages/mine/browse",
+    "pages/mine/sharing",
+    "pages/mine/about"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "ColorUi for UniApp",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "homepage": "/pages/homepage/home",
+    "post": "/pages/post/home",
+    "mine": "/pages/mine/home",
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap15.json"
+}

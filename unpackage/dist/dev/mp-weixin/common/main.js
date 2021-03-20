@@ -14,10 +14,10 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 5));function 
 _vue.default.component('homepage', homepage);var post = function post() {__webpack_require__.e(/*! require.ensure | pages/post/home */ "pages/post/home").then((function () {return resolve(__webpack_require__(/*! ./pages/post/home.vue */ 84));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
-_vue.default.component('post', post);var mine = function mine() {__webpack_require__.e(/*! require.ensure | pages/mine/home */ "pages/mine/home").then((function () {return resolve(__webpack_require__(/*! ./pages/mine/home.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+_vue.default.component('post', post);var mine = function mine() {__webpack_require__.e(/*! require.ensure | pages/mine/home */ "pages/mine/home").then((function () {return resolve(__webpack_require__(/*! ./pages/mine/home.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
-_vue.default.component('mine', mine);var cuCustom = function cuCustom() {__webpack_require__.e(/*! require.ensure | colorui/components/cu-custom */ "colorui/components/cu-custom").then((function () {return resolve(__webpack_require__(/*! ./colorui/components/cu-custom.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+_vue.default.component('mine', mine);var cuCustom = function cuCustom() {__webpack_require__.e(/*! require.ensure | colorui/components/cu-custom */ "colorui/components/cu-custom").then((function () {return resolve(__webpack_require__(/*! ./colorui/components/cu-custom.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 _vue.default.component('cu-custom', cuCustom);

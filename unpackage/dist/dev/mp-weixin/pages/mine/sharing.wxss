@@ -1,0 +1,11 @@
+
+.bg-bluee {
+	background-color: #b7d6f8;
+}
+.cu-btn {
+	width: 40vw;
+}
+.bg-gray {
+	background-color: #f8f8f8;
+}
+

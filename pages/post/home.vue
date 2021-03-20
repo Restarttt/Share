@@ -18,7 +18,7 @@
 				<view class="earnings">
 					<view class="cu-bar bg-white margin-top">
 						<view class="action">
-							<text class="cuIcon-title text-orange"></text>收益类型
+							<text class="cuIcon-redpacket_fill text-red"></text>收益类型
 						</view>
 						<view class="action">
 							<button class="cu-btn bg-green shadow" @tap="showModal"
@@ -46,7 +46,7 @@
 				<view class="resource">
 					<view class="cu-bar bg-white margin-top">
 						<view class="action">
-							<text class="cuIcon-title text-orange "></text> 资源类型
+							<text class="cuIcon-deliver_fill text-orange "></text> 资源类型
 						</view>
 						<view class="action">
 							<button class="cu-btn bg-green shadow" @tap="showModal"
@@ -76,7 +76,7 @@
 				<view class="article">
 					<view class="cu-bar bg-white margin-top">
 						<view class="action">
-							<text class="cuIcon-title text-orange "></text> 关联文章
+							<text class="cuIcon-formfill text-blue "></text> 关联文章
 						</view>
 						<view class="action">
 							<button class="cu-btn bg-green shadow" @tap="showModal" data-target="Modal">Look</button>

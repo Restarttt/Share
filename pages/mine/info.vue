@@ -5,12 +5,14 @@
 			<block slot="content">收款方式</block>
 		</cu-custom>
 		<!-- 未填信息页面 -->
-		<view class="margin-top cu-list.card-menu">
+		<view class="margin-top cu-list.card-menu way">
 			<view class="flex justify-between margin-top padding margin">
 				<button class="cu-btn  lg bg-color text-white shadow ">
-					<text class="cuIcon-weixin text-pink icon padding-right-xs"></text>微信提现</button>
-				<button class="cu-btn  lg line-grey shadow "><text
-						class="cuIcon-emojiflashfill text-pink icon padding-right-xs"></text>支付宝</button>
+					<text class="cuIcon-weixin text-white icon padding-right-xs"></text>微信提现</button>
+				<button class="cu-btn  lg line-grey shadow ">
+					<image class="info_image" src="../../static/pay.png" mode=""></image>
+					支付宝
+				</button>
 			</view>
 			<view class="form">
 				<form>
@@ -62,6 +64,12 @@
 </script>
 
 <style>
+	button image {
+		width: 38rpx;
+		height: 38rpx;
+		margin-right: 10rpx;
+	}
+
 	.cu-form-group {
 		min-height: 80rpx;
 		border: 1rpx solid #eee;

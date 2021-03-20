@@ -27,7 +27,7 @@
 				<!--  -->
 				<view class="bg-white flex padding justify-between">
 					<view class="text-lg flex  align-center">
-						<text class="cuIcon-attention text-gray  margin-right-xs"></text>
+						<text class="cuIcon-attention text-black  margin-right-xs"></text>
 						<view class="text-bold text-sm">10</view>
 					</view>
 					<view class=" text-lg flex align-center">
@@ -53,11 +53,10 @@
 				</view>
 				<view class="sm-border text-center margin">
 					<view class="padding solids radius">
-						<text class="cuIcon-attentionforbid text-gray margin-right-xs"></text>
+						<!-- <text class="cuIcon-attentionforbid text-gray margin-right-xs"></text> -->
 						查看分享内容
-						<text class="cuIcon-unfold text-gray margin-right-xs"></text>
+						<view class="cuIcon-unfold text-gray margin-top text-lg"></view>
 					</view>
-					
 				</view>
 			</view>
 		</view>
@@ -68,7 +67,6 @@
 		<!-- 广告 -->
 		<view class="margin-top-xl text-center  text-bold">
 			广告
-
 		</view>
 		<!-- 	<view class="cu-bar btn-group margin-top">
 			<button class="cu-btn bg-blue shadow-blur round">编辑</button>

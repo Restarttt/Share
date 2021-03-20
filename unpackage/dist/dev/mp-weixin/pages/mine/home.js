@@ -80,7 +80,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 var _default =
 {
   name: "mine",
@@ -90,46 +89,51 @@ var _default =
       CustomBar: this.CustomBar,
       time_list: [{
         title: '今日',
-        num: 22,
-        icon: 'cuIcon - share',
-        color: 'blue' },
+        num: 22 },
 
       {
         title: '本周',
-        num: 22.2,
-        icon: 'cuIcon - share',
-        color: 'blue' },
+        num: 22.2 },
+
 
       {
         title: '累计',
-        num: 22,
-        icon: 'cuIcon - share',
-        color: 'blue' }],
+        num: 22 }],
 
 
       list: [{
         title: '余额提现',
         img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
-        url: '../mine/record' },
+        url: '../mine/record',
+        icon: 'sponsorfill',
+        color: 'red' },
 
       {
         title: '收款方式',
         img: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
-        url: '../mine/info' },
+        url: '../mine/info',
+        icon: 'pay',
+        color: 'cyan' },
 
       {
         title: '收益明细',
         img: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
-        url: '../mine/detail' },
+        url: '../mine/detail',
+        icon: 'refund',
+        color: 'blue' },
 
       {
         title: '分享记录',
         img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-        url: '../mine/sharing' },
+        url: '../mine/sharing',
+        icon: 'friendfill', //group
+        color: 'yellow' },
       {
         title: '浏览记录',
         img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-        url: '../mine/browse' }] };
+        url: '../mine/browse',
+        icon: 'footprint',
+        color: 'orange' }] };
 
 
 

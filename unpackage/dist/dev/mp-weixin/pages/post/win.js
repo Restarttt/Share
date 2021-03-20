@@ -174,26 +174,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
 var _default =
 {
   data: function data() {
     return {
       cuIconList: [{
-        cuIcon: 'share',
+        cuIcon: 'forwardfill',
         color: 'red',
-        badge: 120,
         name: '小程序链接' },
       {
-        cuIcon: 'recordfill',
+        cuIcon: 'emojiflashfill',
         color: 'orange',
-        badge: 1,
         name: '朋友圈' },
       {
-        cuIcon: 'picfill',
+        cuIcon: 'friendfill',
         color: 'yellow',
-        badge: 0,
         name: '微信群' }] };
 
 

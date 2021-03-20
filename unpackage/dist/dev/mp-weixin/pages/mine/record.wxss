@@ -1,4 +1,9 @@
 
+button image {
+	width: 38rpx;
+	height: 38rpx;
+	margin-right: 10rpx;
+}
 .cu-form-group {
 	padding: 1rpx 65rpx;
 	min-height: 0;
@@ -22,7 +27,7 @@
 .icon {
 	padding-right: 15rpx;
 }
-.line{
+.line {
 	line-height: 4vh;
 }
 

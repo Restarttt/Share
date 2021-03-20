@@ -1,6 +1,6 @@
 <template>
 	<view class="page-small">
-		<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg" :isBack="true">
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true">
 			<block slot="backText">返回</block>
 			<block slot="content">创建成功</block>
 		</cu-custom>
@@ -13,24 +13,22 @@
 					<text class="text-black text-bold text-xl ">[有分享，就会有收获]已经创建</text>
 				</view>
 				<view class="padding">你可以分享到微信群，获取收益</view>
-				<view class="bg-green radius padding margin text-center">
-					<text class="letter">分享至群聊获取收益</text>
+				<view class="padding flex flex-direction">
+					<button class="cu-btn bg-green margin-tb-sm lg letter">分享至群聊获取收益</button>
 				</view>
 			</view>
 		</view>
 		<!-- 更多-->
 		<view class="margin sus">
-			<view class="text-center more text-center">
-				<view class="padding text-df bg-white">更多邀请方式</view>
+			<view class="text-center more ">
+				<view class="padding flex justify-center align-center">
+					<view class="bg-gray more-width text-df"> 更多邀请方式</view>
+				</view>
 				<view class="solid-top more-line"></view>
 			</view>
 			<view class="cu-list grid col-3 no-border">
 				<view class="cu-item" v-for="(item,index) in cuIconList" :key="index">
-					<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]">
-						<!-- <view class="cu-tag badge" v-if="item.badge!=0">
-							<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
-						</view> -->
-					</view>
+					<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]"></view>
 					<text>{{item.name}}</text>
 				</view>
 			</view>
@@ -49,19 +47,16 @@
 		data() {
 			return {
 				cuIconList: [{
-					cuIcon: 'share',
+					cuIcon: 'forwardfill',
 					color: 'red',
-					badge: 120,
 					name: '小程序链接'
 				}, {
-					cuIcon: 'recordfill',
+					cuIcon: 'emojiflashfill',
 					color: 'orange',
-					badge: 1,
 					name: '朋友圈'
 				}, {
-					cuIcon: 'picfill',
+					cuIcon: 'friendfill',
 					color: 'yellow',
-					badge: 0,
 					name: '微信群'
 				}]
 
@@ -84,10 +79,10 @@
 	}
 
 	.more-width {
-		width: 40vw;
-		height: 15vw;
+		width: 34vw;
+		height: 7vw;
 		background-color: #fff;
-
+		z-index:1;
 	}
 
 	.more-line {

@@ -5,29 +5,23 @@
 			<block slot="content">分享记录</block>
 		</cu-custom>
 		<!-- -->
-		<view class="cu-list menu-avatar">
-			<view class="cu-item" :class="modalName=='move-box-'+ index?'move-cur':''" v-for="(item,index) in list"
-				:key="index" @touchstart="ListTouchStart" @touchmove="ListTouchMove" @touchend="ListTouchEnd"
-				:data-target="'move-box-' + index" @tap="jump">
-				<view class="cu-avatar round lg" :style="[{backgroundImage:'url(item.img)'}]">
-				</view>
-				<view class=" content">
-					<view class="text-grey">{{item.title}}</view>
-					<view class="flex">
-						<view class="text-gray text-sm">
-							{{item.name}}
+		<view class="margin-top-xxxl">
+			<view class="" v-for="(item,index) in list" :key='index'>
+				<view class="cu-item bg-gray padding cu-list card-menu margin-top">
+					<view class="flex justify-between">
+						<view class="action">
+							<text class="cuIcon-titles text-orange"></text>
+							<text class="text-x text-bold margin-left-xs">{{item.time}}</text>
 						</view>
-						<view class="text-gray text-sm padding-left">
-							{{item.time}}
-						</view>
+						<view class="cuIcon-exit text-bluee text-xl"></view>
 					</view>
-				</view>
-				<view class="action">
-					<text class="cuIcon-discoverfill text-orange"></text>
-				</view>
-				<view class="move">
-					<view class="bg-grey">置顶</view>
-					<view class="bg-red">删除</view>
+					<view class="padding">
+						<text class="text-gray">{{item.title}}</text>
+					</view>
+					<view class="flex  align-center justify-between">
+						<button class="cu-btn bg-bluee  text-blue round">相关文章</button>
+						<button class="cu-btn bg-blue  round text-white ">查看更多</button>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -75,35 +69,21 @@
 					url: '../post/share?id=1&name=uniapp'
 				})
 			},
-			showModal(e) {
-				this.modalName = e.currentTarget.dataset.target
-			},
-			hideModal(e) {
-				this.modalName = null
-			},
-			// ListTouch触摸开始
-			ListTouchStart(e) {
-				this.listTouchStart = e.touches[0].pageX
-			},
 
-			// ListTouch计算方向
-			ListTouchMove(e) {
-				this.listTouchDirection = e.touches[0].pageX - this.listTouchStart > 0 ? 'right' : 'left'
-			},
-
-			// ListTouch计算滚动
-			ListTouchEnd(e) {
-				if (this.listTouchDirection == 'left') {
-					this.modalName = e.currentTarget.dataset.target
-				} else {
-					this.modalName = null
-				}
-				this.listTouchDirection = null
-			}
 		}
 	}
 </script>
 
 <style>
+	.bg-bluee {
+		background-color: #b7d6f8;
+	}
 
+	.cu-btn {
+		width: 40vw;
+	}
+
+	.bg-gray {
+		background-color: #f8f8f8;
+	}
 </style>

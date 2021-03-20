@@ -21,9 +21,10 @@
 				<view class="margin-top-xl">
 					<view class="flex justify-between margin-top-xxxl padding margin">
 						<button class="cu-btn  lg bg-color text-white shadow">
-							<text class="cuIcon-emojiflashfill text-pink icon"></text>微信提现</button>
-						<button class="cu-btn  lg line-grey shadow"><text
-								class="cuIcon-emojiflashfill text-pink icon"></text>支付宝</button>
+							<text class="cuIcon-weixin text-white icon"></text>微信提现</button>
+						<button class="cu-btn  lg line-grey shadow">
+							<image class="info_image" src="../../static/pay.png" mode=""></image>支付宝
+						</button>
 					</view>
 				</view>
 				<view class="pay flex justify-between align-items margin-top-xl">
@@ -83,6 +84,12 @@
 </script>
 
 <style>
+	button image {
+		width: 38rpx;
+		height: 38rpx;
+		margin-right: 10rpx;
+	}
+
 	.cu-form-group {
 		padding: 1rpx 65rpx;
 		min-height: 0;
@@ -111,7 +118,8 @@
 	.icon {
 		padding-right: 15upx;
 	}
-	.line{
+
+	.line {
 		line-height: 4vh;
 	}
 </style>

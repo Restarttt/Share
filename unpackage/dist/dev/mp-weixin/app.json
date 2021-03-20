@@ -23,5 +23,6 @@
     "post": "/pages/post/home",
     "mine": "/pages/mine/home",
     "cu-custom": "/colorui/components/cu-custom"
-  }
+  },
+  "sitemapLocation": "sitemap97.json"
 }

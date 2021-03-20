@@ -6,9 +6,10 @@
 	position: relative;
 }
 .more-width {
-	width: 40vw;
-	height: 15vw;
+	width: 34vw;
+	height: 7vw;
 	background-color: #fff;
+	z-index:1;
 }
 .more-line {
 	position: absolute;

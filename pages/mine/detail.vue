@@ -23,10 +23,12 @@
 			</view>
 		</view>
 		<!-- 收益明细 -->
-		<view class="margin-top-xxxl margin">
-			<view class="text-xl padding text-center text-bold margin-bottom-sm">
+		<view class="margin-top-xl margin">
+			<view class="text-x padding text-center text-bold margin-bottom-sm">
 				收益明细
+				<view class="padding solid-bottom"></view>
 			</view>
+			
 			<view v-for="(item,index) in list" :key="index" class="list">
 				<view class="flex justify-between margin-top text-blu text-xl">
 					<view class="content">
@@ -99,8 +101,9 @@
 	.padding {
 		padding: 13upx 18upx;
 	}
-	.margin{
-		margin: 30rpx;
+
+	.margin {
+		margin: 35rpx;
 	}
 
 	.text-bold {

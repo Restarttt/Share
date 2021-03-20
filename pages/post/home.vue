@@ -85,7 +85,7 @@
 				</view>
 				<!--  -->
 				<view class="cu-bar btn-group" @tap="jump">
-					<button class="cu-btn bg-blue shadow-blur round">提交</button>
+					<button class="cu-btn bg-color shadow-blur round text-white">提交</button>
 				</view>
 			</view>
 			<view class="cu-tabbar-height"></view>

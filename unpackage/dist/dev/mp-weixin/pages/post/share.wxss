@@ -1,0 +1,22 @@
+
+image {
+	width: 30rpx;
+	height: 30rpx;
+}
+.radius {
+	border-radius: 20rpx;
+}
+.cu-list.menu-avatar>.cu-item .content {
+	left: 153rpx;
+}
+.cu-list.menu-avatar>.cu-item .action {
+	width: 160rpx;
+}
+.share-padding {
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+}
+.padding-xl {
+	padding: 35rpx;
+}
+

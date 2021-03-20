@@ -23,11 +23,12 @@
 			</view>
 			<!-- 更多菜单 -->
 			<view class="margin-top-xl">
-				<view class="menu card-menu  cu-list">
-					<view class="cu-item arrow sm-border" @tap="toChild" :data-url="item.url"
-						v-for="(item,index) in list" :key="index">
+				<view class="menu card-menu  cu-list sm-border">
+					<view class="cu-item arrow" @tap="toChild" :data-url="item.url" v-for="(item,index) in list"
+						:key="index">
 						<view class="content">
-							<text class="cuIcon-discoverfill text-orange margin-right-sm"></text>
+							<text class="margin-right-sm"
+								:class="['cuIcon-' + item.cuIcon,'text-' + item.color]"></text>
 							<text class="text-grey">{{item.title}}</text>
 						</view>
 					</view>
@@ -63,15 +64,21 @@
 				CustomBar: this.CustomBar,
 				time_list: [{
 						title: '今日',
-						num: 22
+						num: 22,
+						icon: 'cuIcon - share',
+						color: 'blue'
 					},
 					{
 						title: '本周',
-						num: 22.2
+						num: 22.2,
+						icon: 'cuIcon - share',
+						color: 'blue'
 					},
 					{
 						title: '累计',
-						num: 22
+						num: 22,
+						icon: 'cuIcon - share',
+						color: 'blue'
 					},
 				],
 				list: [{

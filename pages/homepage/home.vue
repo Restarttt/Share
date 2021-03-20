@@ -3,29 +3,34 @@
 		<scroll-view scroll-y class="page bg-white  homepage">
 			<!-- 大标题 -->
 			<view class="text-center">
-				<text class="home-title">有分享，就会有</text>
-				<text class="home-subt">收获</text>
+				<text class="home-title text-bold">有分享，就会</text>
+				<text class="home-subt home-sub text-bold">有</text>
+				<text class="home-subt text-bold">收获</text>
+				<!-- <image class='logo' src="../../static/logo.png" mode=""></image> -->
 			</view>
 			<!--快捷-->
 			<view class="down">
-				<view class="share ">
-					<view class="cu-bar btn-group">
-						<button class="cu-btn .bg-color shadow-blur round lg" @tap="jump">
-							<image src="../../static/tabbar/about_cur.png" mode=""></image>
-							<text class="text text-bold text-df text-content text-white">快捷分享</text>
-						</button>
-					</view>
+				<view class="cu-bar btn-group">
+					<button class="cu-btn .bg-color shadow-blur round lg" @tap="jump">
+						<text class="cuIcon-calendar text-white icon">
+							<text class="text text-bold text-df text-content text-white padding-left">快捷分享
+							</text>
+						</text>
+					</button>
 				</view>
+
 				<view class="recond margin-top-sm">
-					<view class="margin flex align-items justify-center " @tap="jump_share">
-						<image src="../../static/tabbar/about_cur.png" mode=""></image>
-						<text class="text-color text-content text-df text-share">分享记录</text>
+					<view class="margin-top flex align-items justify-center" @tap="jump_share">
+						<text class="cuIcon-calendar text-color icon">
+							<text class="text-color text-content text-df text-share">分享记录</text>
+						</text>
 					</view>
 				</view>
 			</view>
 			<!-- 关于 -->
 			<view class="flex justify-end margin-right-sm" @tap="jump_about">
-				<image src="../../static/tabbar/about_cur.png" mode="">
+				<text class="cuIcon-questionfill text-color icon text-sl">
+				</text>
 			</view>
 		</scroll-view>
 	</view>
@@ -72,11 +77,15 @@
 		margin-right: 25upx;
 	}
 
+	.cu-bar.btn-group button {
+		padding: 45rpx 35rpx;
+	}
+
 	.home-title {
 		font-size: 52upx;
 		font-weight: 400;
 		color: #8799A3;
-		letter-spacing: 17upx;
+		letter-spacing: 12upx;
 		font-style: oblique;
 	}
 
@@ -84,8 +93,12 @@
 		font-weight: 600;
 		font-size: 63upx;
 		color: #0081FF;
-		letter-spacing: 16upx;
+		letter-spacing: 13upx;
 		font-style: oblique;
+	}
+
+	.home-sub {
+		color: #39B54A;
 	}
 
 	.down {
@@ -101,6 +114,15 @@
 	.text-share {
 		letter-spacing: 4upx;
 		line-height: 2.0;
+		padding-left: 13rpx;
+	}
 
+	.text-sl {
+		font-size: 50upx;
+	}
+
+	.margin-right-sm{
+		margin-right: 45upx;
+		margin-top: 141upx;
 	}
 </style>

@@ -1,0 +1,22 @@
+
+.letter {
+	letter-spacing: 10rpx;
+}
+.more {
+	position: relative;
+}
+.more-width {
+	width: 40vw;
+	height: 15vw;
+	background-color: #fff;
+}
+.more-line {
+	position: absolute;
+	top: 50rpx;
+	width: 95vw;
+	height: 2rpx;
+}
+.sus {
+	margin-top: 70rpx;
+}
+

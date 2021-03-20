@@ -5,14 +5,12 @@
 			<block slot="content">收款方式</block>
 		</cu-custom>
 		<!-- 未填信息页面 -->
-		<view class="margin-top cu-list.card-menu ">
-			<view class="margin-top-xl">
-				<view class="flex justify-between margin-top padding margin">
-					<button class="cu-btn  lg bg-color text-white shadow ">
-						<text class="cuIcon-emojiflashfill text-pink icon padding-right-xs"></text>微信提现</button>
-					<button class="cu-btn  lg line-grey shadow "><text
-							class="cuIcon-emojiflashfill text-pink icon padding-right-xs"></text>支付宝</button>
-				</view>
+		<view class="margin-top cu-list.card-menu">
+			<view class="flex justify-between margin-top padding margin">
+				<button class="cu-btn  lg bg-color text-white shadow ">
+					<text class="cuIcon-weixin text-pink icon padding-right-xs"></text>微信提现</button>
+				<button class="cu-btn  lg line-grey shadow "><text
+						class="cuIcon-emojiflashfill text-pink icon padding-right-xs"></text>支付宝</button>
 			</view>
 			<view class="form">
 				<form>
@@ -30,11 +28,11 @@
 				<button class="cu-btn  bg-color lg shadow text-white">保存</button>
 			</view>
 			<!-- 须知 -->
-			<view class="know">
+			<view class="know margin-top-xl">
 				<view class="cu-bar">
 					<view class="action">
 						<text class="cuIcon-titles text-green"></text>
-						<text class="text-xl text-bold bg">提现须知</text>
+						<text class="text-x text-bold bg">提现须知</text>
 					</view>
 				</view>
 				<view class="action padding-sm bg" v-for="(item,index) in text_list" :key="index">

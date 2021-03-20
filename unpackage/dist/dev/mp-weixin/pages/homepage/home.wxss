@@ -7,19 +7,25 @@ image {
 	height: 50rpx;
 	margin-right: 25rpx;
 }
+.cu-bar.btn-group button {
+	padding: 45rpx 35rpx;
+}
 .home-title {
 	font-size: 52rpx;
 	font-weight: 400;
 	color: #8799A3;
-	letter-spacing: 17rpx;
+	letter-spacing: 12rpx;
 	font-style: oblique;
 }
 .home-subt {
 	font-weight: 600;
 	font-size: 63rpx;
 	color: #0081FF;
-	letter-spacing: 16rpx;
+	letter-spacing: 13rpx;
 	font-style: oblique;
+}
+.home-sub {
+	color: #39B54A;
 }
 .down {
 	margin: auto;
@@ -32,5 +38,13 @@ image {
 .text-share {
 	letter-spacing: 4rpx;
 	line-height: 2.0;
+	padding-left: 13rpx;
+}
+.text-sl {
+	font-size: 50rpx;
+}
+.margin-right-sm{
+	margin-right: 45rpx;
+	margin-top: 141rpx;
 }
 

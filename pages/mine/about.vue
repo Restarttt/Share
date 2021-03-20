@@ -5,8 +5,25 @@
 			<block slot="content">关于</block>
 		</cu-custom>
 		<!--  -->
-		<view >
-			111
+		<view class="margin">
+			<view class="cu-bar bg-white">
+				<view class="action">
+					<text class="cuIcon-title text-color"></text>
+					<text class="text-df text-bold">关于我们</text>
+				</view>
+			</view>
+			<view class="cu-bar bg-white">
+				<view class="action">
+					<text class="cuIcon-title text-color"></text>
+					<text class="text-df text-bold">关于我们</text>
+				</view>
+			</view>
+			<view class="cu-bar bg-white">
+				<view class="action">
+					<text class="cuIcon-title text-color"></text>
+					<text class="text-df text-bold">关于我们</text>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -22,5 +39,7 @@
 </script>
 
 <style>
-
+	.margin {
+		margin-top: 40upx;
+	}
 </style>

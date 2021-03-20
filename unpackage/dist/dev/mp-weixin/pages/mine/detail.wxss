@@ -15,8 +15,8 @@ page {
 .padding {
 	padding: 13rpx 18rpx;
 }
-.margin{
-	margin: 30rpx;
+.margin {
+	margin: 35rpx;
 }
 .text-bold {
 	text-align: center;

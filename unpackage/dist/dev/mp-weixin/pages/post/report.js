@@ -180,16 +180,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
     return {
       index: -1,
-      picker: ['喵喵喵', '汪汪汪', '哼唧哼唧'] };
+      picker: ['色情', '诱导', '欺诈', '违法犯罪', '恶意营销', '不实信息', '侵权', '其他'] };
 
   },
   methods: {

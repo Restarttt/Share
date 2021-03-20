@@ -14,7 +14,7 @@
   "subPackages": [],
   "window": {
     "navigationBarBackgroundColor": "#0081ff",
-    "navigationBarTitleText": "ColorUi for UniApp",
+    "navigationBarTitleText": "分象",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
@@ -23,6 +23,5 @@
     "post": "/pages/post/home",
     "mine": "/pages/mine/home",
     "cu-custom": "/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap92.json"
+  }
 }

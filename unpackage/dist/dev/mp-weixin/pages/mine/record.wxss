@@ -22,4 +22,7 @@
 .icon {
 	padding-right: 15rpx;
 }
+.line{
+	line-height: 4vh;
+}
 

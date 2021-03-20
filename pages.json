@@ -42,7 +42,7 @@
 			"allowsBounceVertical": "NO"
 		},
 		"navigationBarBackgroundColor": "#0081ff",
-		"navigationBarTitleText": "ColorUi for UniApp",
+		"navigationBarTitleText": "分象",
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},

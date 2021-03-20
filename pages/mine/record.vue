@@ -7,18 +7,18 @@
 		<!--可提现余额-->
 		<view class="margin-top-xxxl">
 			<view
-				class="cu-item bg-color flex align-items padding justify-between cu-list menu-avatar card-menu margin-top-">
-				<view class="padding">
-					<view class="padding text-sm text-bold text-white">可提限金额</view>
-					<view class="text-bold text-yellow padding text-xxl">{{moeny}}</view>
+				class="cu-item bg-color flex align-items padding justify-between cu-list menu-avatar card-menu margin-top">
+				<view class="padding line">
+					<view class="text-sm text-bold text-white">可提限金额</view>
+					<view class="text-bold text-yellow text-xxl">{{moeny}}</view>
 				</view>
 				<view class="flex  align-center padding">
 					<button class="cu-btn  bg-yellow shadow">刷新</button>
 				</view>
 			</view>
 			<!-- 方式 -->
-			<view class="way">
-				<view class="margin-top-xxxl">
+			<view class="way margin-top-xxxl">
+				<view class="margin-top-xl">
 					<view class="flex justify-between margin-top-xxxl padding margin">
 						<button class="cu-btn  lg bg-color text-white shadow">
 							<text class="cuIcon-emojiflashfill text-pink icon"></text>微信提现</button>
@@ -35,9 +35,10 @@
 
 			</view>
 			<!-- 提现记录 -->
-			<view class="way margin-top-xxxl">
-				<view class=" text-xl padding text-center text-bold margin-bottom-sm">
+			<view class="way margin-top-xl">
+				<view class=" text-x padding text-center text-bold margin-bottom-sm">
 					提现记录
+					<view class="padding solid-bottom"></view>
 				</view>
 				<view v-for="(item,index) in list" :key="index" class="list">
 					<view class="flex justify-between margin-top text-blu text-xl">
@@ -109,5 +110,8 @@
 
 	.icon {
 		padding-right: 15upx;
+	}
+	.line{
+		line-height: 4vh;
 	}
 </style>

@@ -14,37 +14,40 @@
 				</view>
 			</view>
 			<!-- 类型 -->
-			<view class="type">
+			<view class="type margin ">
 				<view class="earnings">
-					<view class="cu-bar bg-white margin-top">
-						<view class="action">
-							<text class="cuIcon-redpacket_fill text-red"></text>收益类型
+					<view class="resource">
+						<!-- 收益 -->
+						<view class="cu-bar bg-white margin-top radius">
+							<view class="action">
+								<text class="cuIcon-redpacket_fill text-red"></text>收益类型
+							</view>
+							<view class="action">
+								<button class="cu-btn bg-green shadow" @tap="showModal"
+									data-target="RadioModal">Radio</button>
+							</view>
 						</view>
-						<view class="action">
-							<button class="cu-btn bg-green shadow" @tap="showModal"
-								data-target="RadioModal">Radio</button>
-						</view>
-					</view>
 
-					<view class="cu-modal" :class="modalName=='RadioModal'?'show':''" @tap="hideModal">
-						<view class="cu-dialog" @tap.stop="">
-							<radio-group class="block" @change="RadioChange">
-								<view class="cu-list menu text-left">
-									<view class="cu-item" v-for="(item,index) in radio" :key="index">
-										<label class="flex justify-between align-center flex-sub">
-											<view class="flex-sub">{{item.name}}</view>
-											<radio class="round" :class="radio=='radio' + index?'checked':''"
-												:checked="radio=='radio' + index?true:false" :value="'radio' + index">
-											</radio>
-										</label>
+						<view class="cu-modal" :class="modalName=='RadioModal'?'show':''" @tap="hideModal">
+							<view class="cu-dialog" @tap.stop="">
+								<radio-group class="block" @change="RadioChange">
+									<view class="cu-list menu text-left">
+										<view class="cu-item" v-for="(item,index) in radio" :key="index">
+											<label class="flex justify-between align-center flex-sub">
+												<view class="flex-sub">{{item.name}}</view>
+												<radio class="round" :class="radio=='radio' + index?'checked':''"
+													:checked="radio=='radio' + index?true:false"
+													:value="'radio' + index">
+												</radio>
+											</label>
+										</view>
 									</view>
-								</view>
-							</radio-group>
+								</radio-group>
+							</view>
 						</view>
 					</view>
-				</view>
-				<view class="resource">
-					<view class="cu-bar bg-white margin-top">
+<!-- 资源类型 -->
+					<view class="cu-bar bg-white margin-top radius">
 						<view class="action">
 							<text class="cuIcon-deliver_fill text-orange "></text> 资源类型
 						</view>
@@ -72,17 +75,21 @@
 							</view>
 						</view>
 					</view>
-				</view>
-				<view class="article">
-					<view class="cu-bar bg-white margin-top">
-						<view class="action">
-							<text class="cuIcon-formfill text-blue "></text> 关联文章
-						</view>
-						<view class="action">
-							<button class="cu-btn bg-green shadow" @tap="showModal" data-target="Modal">Look</button>
+					<!-- 关联文字
+					 -->
+					<view class="article ">
+						<view class="cu-bar bg-white margin-top radius">
+							<view class="action">
+								<text class="cuIcon-formfill text-blue "></text> 关联文章
+							</view>
+							<view class="action">
+								<button class="cu-btn bg-green shadow" @tap="showModal"
+									data-target="Modal">Look</button>
+							</view>
 						</view>
 					</view>
 				</view>
+
 				<!--  -->
 				<view class="cu-bar btn-group" @tap="jump">
 					<button class="cu-btn bg-color shadow-blur round text-white">提交</button>
@@ -114,7 +121,7 @@
 					value: 2,
 					name: '图片',
 					checked: true,
-					hot:  false,
+					hot: false,
 				}],
 				radio: [{
 					value: 0,
@@ -132,7 +139,7 @@
 					checked: true,
 					hot: true,
 				}],
-				
+
 
 			};
 

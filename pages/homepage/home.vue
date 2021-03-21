@@ -1,4 +1,4 @@
-<template name="homepage">
+e<template name="homepage">
 	<view>
 		<scroll-view scroll-y class="page bg-white  homepage">
 			<!-- 大标题 -->
@@ -10,8 +10,9 @@
 			</view>
 			<!--快捷-->
 			<view class="down">
-				<view class="cu-bar btn-group">
-					<button class="cu-btn .bg-color shadow-blur round lg" @tap="jump">
+				<view class="cu-bar btn-group" @tap="login">
+					<button class="cu-btn .bg-color shadow-blur round lg" @tap="jump" open-type='getUserInfo'
+						lang=“zh_CN”>
 						<text class="cuIcon-calendar text-white icon">
 							<text class="text text-bold text-df text-content text-white padding-left">快捷分享
 							</text>
@@ -59,10 +60,49 @@
 					url: '../mine/about?id=1&name=uniapp'
 				})
 			},
+
+			login() {
+				// 获取用户信息
+				uni.login({
+					provider: 'weixin',
+					success: function(res) {
+						console.log(res);
+						if (res.code) {
+							uni.getUserInfo({
+								provider: 'weixin',
+								success: function(e) {
+									console.log(e.userInfo);
+									if (e.userInfo) {
+										uni.showModal({
+											title: '登录成功',
+											showCancel: true
+										});
+									}
+
+								},
+
+							});
+						} else {
+							fail: (error) => {
+								console.log('getUserInfo fail', error);
+								let content = error.errMsg;
+								if (~content.indexOf('uni.login')) {
+									content = '请在登录页面完成登录操作';
+								}
+								uni.showModal({
+									title: '获取用户信息失败',
+									content: '错误原因' + content,
+									showCancel: false
+								});
+							}
+
+
+						}
+					}
+				});
+
+			}
 		},
-		onShow() {
-			console.log("success")
-		}
 	}
 </script>
 
@@ -121,7 +161,7 @@
 		font-size: 50upx;
 	}
 
-	.margin-right-sm{
+	.margin-right-sm {
 		margin-right: 45upx;
 		margin-top: 141upx;
 	}

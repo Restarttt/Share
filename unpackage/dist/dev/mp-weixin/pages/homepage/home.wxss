@@ -43,7 +43,7 @@ image {
 .text-sl {
 	font-size: 50rpx;
 }
-.margin-right-sm{
+.margin-right-sm {
 	margin-right: 45rpx;
 	margin-top: 141rpx;
 }

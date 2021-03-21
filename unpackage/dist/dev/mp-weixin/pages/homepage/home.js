@@ -152,6 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   name: "homepage",
@@ -174,11 +175,49 @@ var _default =
       uni.navigateTo({
         url: '../mine/about?id=1&name=uniapp' });
 
-    } },
+    },
 
-  onShow: function onShow() {
-    console.log("success");
-  } };exports.default = _default;
+    login: function login() {
+      // 获取用户信息
+      uni.login({
+        provider: 'weixin',
+        success: function success(res) {
+          console.log(res);
+          if (res.code) {
+            uni.getUserInfo({
+              provider: 'weixin',
+              success: function success(e) {
+                console.log(e.userInfo);
+                if (e.userInfo) {
+                  uni.showModal({
+                    title: '登录成功',
+                    showCancel: true });
+
+                }
+
+              } });
+
+
+          } else {
+            fail: (function (error) {
+              console.log('getUserInfo fail', error);
+              var content = error.errMsg;
+              if (~content.indexOf('uni.login')) {
+                content = '请在登录页面完成登录操作';
+              }
+              uni.showModal({
+                title: '获取用户信息失败',
+                content: '错误原因' + content,
+                showCancel: false });
+
+            });
+
+
+          }
+        } });
+
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

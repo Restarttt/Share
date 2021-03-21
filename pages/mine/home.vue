@@ -11,7 +11,7 @@
 						<view class="text-white">嗯嗯嗯</view>
 					</view>
 					<view class="padding flex flex-wrap justify-between align-center text-color">
-						<button class="cu-btn round bg-yellow shadow">刷新</button>
+						<button class="cu-btn round bg-yellow shadow" open-type='getUserInfo' lang=“zh_CN”>刷新</button>
 					</view>
 				</view>
 				<view class="bg-white flex padding justify-between">
@@ -27,7 +27,7 @@
 					<view class="cu-item arrow" @tap="toChild" :data-url="item.url" v-for="(item,index) in list"
 						:key="index">
 						<view class="content flex">
-							<view :class="['cuIcon-' + item.icon,'text-' + item.color]" ></view>
+							<view :class="['cuIcon-' + item.icon,'text-' + item.color]"></view>
 							<text class="text-grey padding-left-xs">{{item.title}}</text>
 						</view>
 					</view>
@@ -100,7 +100,7 @@
 						title: '分享记录',
 						img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
 						url: '../mine/sharing',
-						icon: 'friendfill',//group
+						icon: 'friendfill', //group
 						color: 'yellow'
 					}, {
 						title: '浏览记录',
@@ -124,7 +124,8 @@
 				})
 
 			},
-		},
+
+		}
 	}
 </script>
 

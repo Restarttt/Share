@@ -1,4 +1,16 @@
 
+.text-width {
+	height: 6vh;
+	width: 92vw;
+}
+.cu-dialog .cu-bar {
+	margin-top: 0;
+}
+.wang_width {
+	width: 21vw;
+	height: 8vh;
+	margin: 0 auto;
+}
 .cu-tag {
 	letter-spacing: 4rpx;
 	border-radius: 100rpx;

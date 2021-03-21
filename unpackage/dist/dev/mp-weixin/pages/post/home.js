@@ -216,6 +216,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   name: "post",
@@ -247,12 +251,12 @@ var _default =
       {
         value: 1,
         name: '激励',
-        checked: true,
+        checked: false,
         hot: false },
       {
         value: 2,
         name: '原生',
-        checked: true,
+        checked: false,
         hot: true }] };
 
 
@@ -278,6 +282,7 @@ var _default =
     },
     RadioChange: function RadioChange(e) {
       this.radio = e.detail.value;
+      console.log(e.detail.value);
     },
     ChooseCheckbox: function ChooseCheckbox(e) {
       var items = this.checkbox;
